@@ -6,13 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/pepperoniButton"
+        android:layout_width="171dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:drawableTop="@mipmap/pepperoni"
+        android:onClick="pepperoni"
+        android:text="@string/pepperoni"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/viewOrder"
+        android:layout_width="168dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="120dp"
+        android:drawableTop="@mipmap/shopping_cart"
+        android:onClick="launchViewOrders"
+        android:text="@string/view_order"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/storesOrders"
+        android:layout_width="220dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="328dp"
+        android:drawableTop="@mipmap/store"
+        android:onClick="storesOrders"
+        android:text="@string/store_orders"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hawaiian"
+        android:layout_width="171dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:drawableTop="@mipmap/hawaiian"
+        android:onClick="hawaiian"
+        android:text="@string/hawaiian"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deluxe"
+        android:layout_width="171dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="376dp"
+        android:drawableTop="@mipmap/deluxe"
+        android:onClick="deluxe"
+        android:text="@string/deluxe"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:onClick="register"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="69dp"
+        android:labelFor="@id/editTextPhone"
+        android:text="@string/phone_number"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
